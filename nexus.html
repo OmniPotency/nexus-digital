@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nexus Digital - Premium Marketing Solutions</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="sidebar">
+<div class="logo">
+<h1>NEXUS</h1>
+<p>Digital Marketing Excellence</p>
+</div>
+<ul class="nav-links">
+<li><a href="#" class="nav-link active" data-page="home"><span>🏠</span>Home</a></li>
+<li><a href="#" class="nav-link" data-page="services"><span>💼</span>Services</a></li>
+<li><a href="#" class="nav-link" data-page="custom-plan"><span>⚙️</span>Custom Plan</a></li>
+<li><a href="#" class="nav-link" data-page="customer-service"><span>🎧</span>Customer Service</a></li>
+<li><a href="#" class="nav-link" data-page="about"><span>ℹ️</span>About Us</a></li>
+</ul>
+</div>
+<div class="main-content">
+<div id="home" class="page active">
+<div class="reveal-container">
+<div class="base-layer"></div>
+<div class="top-layer" id="topLayer"></div>
+<div class="home-content">
+<h1>Transform Your Digital Presence</h1>
+<p>We deliver cutting-edge digital marketing solutions tailored to elevate your brand and drive measurable results</p>
+<button class="cta-btn" onclick="navigateToPage('services')">Explore Our Services</button>
+</div>
+</div>
+</div>
+<div id="services" class="page">
+<div class="page-header">
+<h2>Our Service Packages</h2>
+<p>Choose the perfect plan to accelerate your digital growth</p>
+</div>
+<div class="packages-grid">
+<div class="package-card bronze">
+<div class="package-tier bronze-tier">Bronze</div>
+<div class="package-price">$499<span>/month</span></div>
+<ul class="package-features">
+<li>Social Media Management (2 platforms)</li>
+<li>Basic SEO Optimization</li>
+<li>Monthly Analytics Report</li>
+<li>Email Marketing (1 campaign/month)</li>
+<li>Content Creation (4 posts/month)</li>
+</ul>
+<button class="select-btn" onclick="selectPackage('Bronze')">Select Package</button>
+</div>
+<div class="package-card silver">
+<div class="package-tier silver-tier">Silver</div>
+<div class="package-price">$899<span>/month</span></div>
+<ul class="package-features">
+<li>Social Media Management (4 platforms)</li>
+<li>Advanced SEO & Link Building</li>
+<li>Bi-weekly Analytics Reports</li>
+<li>Email Marketing (2 campaigns/month)</li>
+<li>Content Creation (8 posts/month)</li>
+<li>Basic PPC Campaign Management</li>
+<li>Brand Strategy Consultation</li>
+</ul>
+<button class="select-btn" onclick="selectPackage('Silver')">Select Package</button>
+</div>
+<div class="package-card gold">
+<div class="package-tier gold-tier">Gold</div>
+<div class="package-price">$1,499<span>/month</span></div>
+<ul class="package-features">
+<li>Full Social Media Management</li>
+<li>Premium SEO & Technical Audit</li>
+<li>Weekly Analytics & Strategy Calls</li>
+<li>Email Marketing (Unlimited campaigns)</li>
+<li>Content Creation (15 posts/month)</li>
+<li>Advanced PPC Campaign Management</li>
+<li>Video Marketing (2 videos/month)</li>
+<li>Influencer Outreach</li>
+</ul>
+<button class="select-btn" onclick="selectPackage('Gold')">Select Package</button>
+</div>
+<div class="package-card platinum">
+<div class="package-tier platinum-tier">Platinum</div>
+<div class="package-price">$2,499<span>/month</span></div>
+<ul class="package-features">
+<li>Enterprise Social Media Management</li>
+<li>Complete SEO & Conversion Optimization</li>
+<li>Real-time Analytics Dashboard</li>
+<li>Full Email Marketing Suite</li>
+<li>Premium Content Creation (25 posts/month)</li>
+<li>Multi-channel PPC Management</li>
+<li>Video Marketing (5 videos/month)</li>
+<li>Dedicated Account Manager</li>
+<li>Reputation Management</li>
+</ul>
+<button class="select-btn" onclick="selectPackage('Platinum')">Select Package</button>
+</div>
+<div class="package-card diamond">
+<div class="package-tier diamond-tier">Diamond</div>
+<div class="package-price">$4,999<span>/month</span></div>
+<ul class="package-features">
+<li>White-label Solutions Available</li>
+<li>AI-Powered Marketing Automation</li>
+<li>Custom Analytics & BI Integration</li>
+<li>Unlimited Content Creation</li>
+<li>Full-Service Video Production</li>
+<li>Enterprise PPC & Retargeting</li>
+<li>International Campaign Management</li>
+<li>Executive Strategy Team</li>
+<li>24/7 Priority Support</li>
+<li>Custom Software Development</li>
+</ul>
+<button class="select-btn" onclick="selectPackage('Diamond')">Select Package</button>
+</div>
+</div>
+</div>
+<div id="custom-plan" class="page">
+<div class="page-header">
+<h2>Create Your Custom Plan</h2>
+<p>Tell us exactly what you need, and we'll craft the perfect solution</p>
+</div>
+<div class="form-container">
+<form id="customPlanForm">
+<div class="form-grid">
+<div class="form-group">
+<label>Company Name *</label>
+<input type="text" required placeholder="Enter your company name">
+</div>
+<div class="form-group">
+<label>Industry *</label>
+<input type="text" required placeholder="e.g., E-commerce, SaaS">
+</div>
+</div>
+<div class="form-grid">
+<div class="form-group">
+<label>Budget Range *</label>
+<select required>
+<option value="">Select budget range</option>
+<option value="500-1000">$500 - $1,000/month</option>
+<option value="1000-2500">$1,000 - $2,500/month</option>
+<option value="2500-5000">$2,500 - $5,000/month</option>
+<option value="5000+">$5,000+/month</option>
+</select>
+</div>
+<div class="form-group">
+<label>Project Timeline *</label>
+<select required>
+<option value="">Select timeline</option>
+<option value="1-3">1-3 months</option>
+<option value="3-6">3-6 months</option>
+<option value="6-12">6-12 months</option>
+<option value="12+">12+ months</option>
+</select>
+</div>
+</div>
+<div class="form-group full-width">
+<label>Services Required *</label>
+<textarea rows="4" required placeholder="Describe the services you need (SEO, Social Media, Content Marketing, PPC, etc.)"></textarea>
+</div>
+<div class="form-group full-width">
+<label>Project Goals & Objectives *</label>
+<textarea rows="4" required placeholder="What are your main goals? (Increase traffic, generate leads, brand awareness, etc.)"></textarea>
+</div>
+<div class="form-grid">
+<div class="form-group">
+<label>Contact Email *</label>
+<input type="email" required placeholder="your@email.com">
+</div>
+<div class="form-group">
+<label>Phone Number *</label>
+<input type="tel" required placeholder="+92 3000000000">
+</div>
+</div>
+<button type="submit" class="submit-btn">Submit Custom Plan Request</button>
+</form>
+</div>
+</div>
+<div id="customer-service" class="page">
+<div class="page-header">
+<h2>We're Here to Help</h2>
+<p>Reach out to us through any of these channels</p>
+</div>
+<div class="service-grid">
+<div class="service-card">
+<div class="service-icon">📧</div>
+<h3>Email Support</h3>
+<p><strong>General Inquiries:</strong><br>nexuspakistan@gmail.com</p>
+<p><strong>Technical Support:</strong><br>support.nexuspakistan@gmail.com</p>
+<p><strong>Response Time:</strong> Within an hour</p>
+</div>
+<div class="service-card">
+<div class="service-icon">📞</div>
+<h3>Phone Support</h3>
+<p><strong>Main Line:</strong><br>+92 300 0004269</p>
+<p><strong>International:</strong><br>+92 321 1114269</p>
+<p><strong>Hours:</strong> Mon-Sat, 8AM-8PM PST</p>
+</div>
+<div class="service-card">
+<div class="service-icon">💬</div>
+<h3>Live Chat</h3>
+<p>Get instant answers to your questions with our live chat support</p>
+<p><strong>Available:</strong> 24/7</p>
+<p><strong>Avg. Response:</strong> Under 2 minutes</p>
+</div>
+<div class="service-card">
+<div class="service-icon">📍</div>
+<h3>Office Locations</h3>
+<p><strong>HQ:</strong> 6699 Lower Mall<br>Lahore, LHR 54000</p>
+<p><strong>Main Branch:</strong> 123 7th Avenue<br>Islamabad, ISL 45000</p>
+</div>
+</div>
+<div class="complaint-form">
+<h3>Submit a Complaint or Concern</h3>
+<form id="complaintForm">
+<div class="form-group">
+<label>Your Name *</label>
+<input type="text" required>
+</div>
+<div class="form-group">
+<label>Email Address *</label>
+<input type="email" required>
+</div>
+<div class="form-group">
+<label>Order/Project ID (if applicable)</label>
+<input type="text" placeholder="e.g., NX-12345">
+</div>
+<div class="form-group">
+<label>Issue Category *</label>
+<select required>
+<option value="">Select category</option>
+<option value="billing">Billing Issue</option>
+<option value="service">Service Quality</option>
+<option value="technical">Technical Problem</option>
+<option value="communication">Communication Issue</option>
+<option value="other">Other</option>
+</select>
+</div>
+<div class="form-group">
+<label>Describe Your Concern *</label>
+<textarea rows="5" required placeholder="Please provide as much detail as possible..."></textarea>
+</div>
+<button type="submit" class="submit-btn">Submit Complaint</button>
+</form>
+</div>
+</div>
+<div id="about" class="page">
+<div class="about-header">
+<h2>About Nexus Digital</h2>
+<p>Your trusted partner in digital excellence since 2015</p>
+</div>
+<div class="about-content">
+<div class="about-text">
+<p>Nexus Digital was founded with a simple mission: to help businesses thrive in the digital age. What started as a small team of passionate marketers has grown into a full-service digital marketing powerhouse serving clients across 40+ countries.</p>
+<p>We combine data-driven strategies with creative excellence to deliver campaigns that don't just meet expectations—they exceed them. Our team of 150+ experts specializes in everything from SEO and social media to cutting-edge AI-powered marketing automation.</p>
+<p>At Nexus, we believe in transparency, innovation, and results. Every campaign we run is backed by real-time analytics and optimized for maximum ROI. Your success is our success.</p>
+</div>
+<div class="stats-grid">
+<div class="stat-card">
+<div class="stat-number">500+</div>
+<div class="stat-label">Happy Clients</div>
+</div>
+<div class="stat-card">
+<div class="stat-number">1.2M+</div>
+<div class="stat-label">Leads Generated</div>
+</div>
+<div class="stat-card">
+<div class="stat-number">98%</div>
+<div class="stat-label">Client Retention</div>
+</div>
+<div class="stat-card">
+<div class="stat-number">$50M+</div>
+<div class="stat-label">Revenue Generated</div>
+</div>
+</div>
+<div class="about-header">
+<h2>What Our Clients Say</h2>
+</div>
+<div class="reviews-grid">
+<div class="review-card">
+<div class="stars">★★★★★</div>
+<p class="review-text">"Nexus Digital transformed our online presence completely. Within 6 months, our organic traffic increased by 340% and our conversion rate doubled. Highly recommended!"</p>
+<div class="reviewer">
+<div class="reviewer-avatar">HJ</div>
+<div class="reviewer-info">
+<h4>Haider Jalil</h4>
+<p>CEO, TechStart Inc.</p>
+</div>
+</div>
+</div>
+<div class="review-card">
+<div class="stars">★★★★★</div>
+<p class="review-text">"We've worked with several agencies before, but Nexus is in a league of their own. Their data-driven approach and creative campaigns have helped us alot. Highly recommended!"</p>
+<div class="reviewer">
+<div class="reviewer-avatar">AT</div>
+<div class="reviewer-info">
+<h4>Asharab Tariq</h4>
+<p>Marketing Director, EcoLife</p>
+</div>
+</div>
+</div>
+<div class="review-card">
+<div class="stars">★★★★★</div>
+<p class="review-text">"The Platinum package was worth every penny. Our social media engagement skyrocketed, and our brand visibility has never been better. The dedicated account manager makes everything seamless."</p>
+<div class="reviewer">
+<div class="reviewer-avatar">AS</div>
+<div class="reviewer-info">
+<h4>Abdullah Saeed</h4>
+<p>Founder, CR Co.</p>
+</div>
+</div>
+</div>
+<div class="review-card">
+<div class="stars">★★★★★</div>
+<p class="review-text">"Outstanding service from start to finish. They took time to understand our unique needs and created a custom strategy that delivered exceptional results. Our lead generation increased by 280% in just 4 months!"</p>
+<div class="reviewer">
+<div class="reviewer-avatar">BW</div>
+<div class="reviewer-info">
+<h4>Bruce Wayne</h4>
+<p>CEO, Wayne Enterprises</p>
+</div>
+</div>
+</div>
+<div class="review-card">
+<div class="stars">★★★★★</div>
+<p class="review-text">"Nexus doesn't just execute—they strategize, innovate, and constantly optimize. Their expertise in PPC and SEO has been instrumental in our 10x growth over the past year. True partners in success!"</p>
+<div class="reviewer">
+<div class="reviewer-avatar">TS</div>
+<div class="reviewer-info">
+<h4>Tony Stark</h4>
+<p>Owner, Stark Industries</p>
+</div>
+</div>
+</div>
+<div class="review-card">
+<div class="stars">★★★★★</div>
+<p class="review-text">"The transparency and communication are top-notch. We receive detailed reports and have regular strategy calls. They genuinely care about our success and it shows in the results—450% increase in qualified leads!"</p>
+<div class="reviewer">
+<div class="reviewer-avatar">PP</div>
+<div class="reviewer-info">
+<h4>Peter Parker</h4>
+<p>CEO, Parker Industries</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
